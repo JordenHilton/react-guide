@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import classes from './App.css';
-import Person from './Person/Person';
+import Person from '../components/Persons/Person/Person';
 
 class App extends Component {
   state = {
@@ -79,10 +79,10 @@ class App extends Component {
 
     return (
       <div className={classes.App}>
-        <h1>Hi, I'm a React App</h1>
-        <p className={assignedClasses.join(' ')}>This is really working!</p>
+        <h1>Jorden Hilton</h1>
+        <p className={assignedClasses.join(' ')}>Web Developer</p>
         <button className={btnClass} onClick={this.togglePersonsHandler}>
-          Toggle Persons
+          Toggle Cards
         </button>
         {persons}
       </div>
